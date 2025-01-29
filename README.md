@@ -2,4 +2,4 @@
 
 ## Made by Mateusz Kolinski MateuszPKolinski@gmail.com in 2022
 
-![Final Result for Poland](MainImage.png)
+![Final Result for Poland](assets/MainImage.png)
