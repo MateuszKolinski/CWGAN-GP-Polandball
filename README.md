@@ -30,4 +30,6 @@ Please bear in mind that the whole idea of this comic is to be drawn sloppily by
 
 ### Choosing the best generator iteration based on Frechet Inception Distance
 
-Generator states were saved every 10 epochs. To assess the quality of the generated images from such a vast dataset, I used the Fréchet Inception Distance (FID). This metric compares the distributions of two datasets by computing the Fréchet distance between gaussian functions fitted to their feature representations in an Inception-based convolutional neural network. To save computation time, FID was calculated for each class from only 32 generated images of that class. This leaves a lot of room for improvement.
+Generator states were saved every 10 epochs. To assess the quality of the generated images from such a vast dataset, I used the Fréchet Inception Distance (FID). This metric compares the distributions of two datasets by computing the Fréchet distance between gaussian functions fitted to their feature representations in an Inception-based convolutional neural network. To save computation time, FID was calculated for each class from only 32 generated images of that class. This leaves a lot of room for improvement in the future versions. FID was then averaged for all classes every 10 epochs. From that data, a graph was plotted which determined the best generator state - the one with lowest FID.
+
+![FID](/assets/FID.png)
